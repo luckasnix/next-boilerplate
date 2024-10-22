@@ -1,9 +1,15 @@
-import styles from './page.module.css';
+import Link from 'next/link';
+import Grid from '@mui/material/Grid2';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 const Home = () => (
-  <div className={styles.page}>
-    <h1>Next Boilerplate</h1>
-  </div>
+  <Grid container direction='column' alignItems='center'>
+    <Typography variant='h1'>Next Boilerplate</Typography>
+    <Link href='https://github.com/luckasnix/next-boilerplate' target='_blank' rel='noopener'>
+      <Button variant='contained'>Go to the repository</Button>
+    </Link>
+  </Grid>
 );
 
 export default Home;
